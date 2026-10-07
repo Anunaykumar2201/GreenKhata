@@ -13,6 +13,7 @@ app.use(express.json());
 
 // Routes
 app.use('/api', testRoutes);
+app.use("/api/aa", require("./routes/aaRoutes"));
 
 // Root route for quick health check
 app.get('/', (req, res) => {
